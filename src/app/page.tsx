@@ -1,19 +1,22 @@
 import Button from "./components/ui/Button";
+import ThemeChanger from "./components/ui/ThemeChanger";
 
 export default function Home() {
   return (
     <main className="min-h-screen p-24">
-      <h1 className="text-center my-5 text-4xl bg-white rounded-md text-black w-fit p-5 mx-auto font-sans">
+      <h1 className="text-center my-5 text-4xl bg-primary rounded-md text-black w-fit p-5 mx-auto font-sans">
         Design System in Depth
       </h1>
-      <div className="space-y-3">
-      <Button>PRIMARY</Button>
-      <Button intent={"destructive"}>DESTRUCTIVE</Button>
-      <Button>SECONDARY</Button>
-      <Button intent={"outline"}>OUTLINE</Button>
-      <Button>GHOST</Button>
-      <Button>LINK</Button>
+      <ThemeChanger />
+      <div className="flex items-center space-x-4 ">
+      <Button size={"xs"}>xs</Button>
+      <Button variant={"destructive"} size={"sm"} rounded={"none"}>small</Button>
+      <Button size={"base"}>base</Button>
+      <Button variant={"outline"} size={"lg"}>large</Button>
+      {/* <Button>LINK</Button> */}
       </div>
+      <Button fullWidth rounded={"full"}>GHOST</Button>
+
     </main>
   );
 }
