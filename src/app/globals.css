@@ -31,12 +31,14 @@
   :root {
     /* --background: #ffffff; */
     --primary: 170 60% 52.9%;
+    --primary-hover: #015364;
     --foreground: 0 0% 100%;
   }
 
   .dark{
     /* --background: #0a0a0a; */
     --primary: 152.9 60% 52.9%;
+    --primary-hover: #015364;
     --foreground: red;
 
   }

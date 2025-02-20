@@ -2,10 +2,10 @@ import { ButtonHTMLAttributes, ReactNode } from "react"
 import { cva, type VariantProps } from "class-variance-authority";
 import { tailwindCMerge } from "@/utils";
 
-const buttonVariants = cva("inline-flex justify-center items-center duration-200 ", {
+export const buttonVariants = cva("inline-flex justify-center items-center duration-300 ", {
   variants: {
     variant: {
-      primary: "bg-primary text-foreground",
+      primary: "bg-primary text-white hover:bg-primary-hover",
       outline: "bg-transparent text-black dark:text-white border border-gray-300",
       destructive: "bg-red-600 text-black dark:bg-red-800 dark:text-white ",
     },

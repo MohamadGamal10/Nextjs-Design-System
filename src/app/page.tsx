@@ -1,4 +1,5 @@
-import Button from "./components/ui/Button";
+import Link from "next/link";
+import Button, { buttonVariants } from "./components/ui/Button";
 import ThemeChanger from "./components/ui/ThemeChanger";
 
 export default function Home() {
@@ -16,6 +17,12 @@ export default function Home() {
       {/* <Button>LINK</Button> */}
       </div>
       <Button fullWidth rounded={"full"}>GHOST</Button>
+      <br />
+      <br />
+      <br />
+      <br />
+      <Link href="/ticket" className={buttonVariants({rounded:"full"})}>Get Your Ticket</Link>
+
 
     </main>
   );

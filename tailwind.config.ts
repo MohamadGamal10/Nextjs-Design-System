@@ -11,9 +11,10 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "hsl(var(--primary)/.7)",
-        foreground: "hsl(var(--foreground))",
-        }
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--foreground))",
+          hover: "var(--primary-hover)",
+        },
         // background: "var(--background)",
         // foreground: "var(--foreground)",
       },
